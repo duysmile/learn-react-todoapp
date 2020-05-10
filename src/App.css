@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+.App {
+  text-align: center;
+  width: 400px;
+  margin: 200px auto;
+  position: relative;
+}
+
+.todo {
+  background-color: #64b8c2;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  height: 650px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.header h2 {
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+.footer {
+  height: 70px;
+}
+
+.footer .btn-add {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: white;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: #64b8c2;
+  box-shadow: 0px 0px 16px 0px rgba(252, 252, 252, 0.73);
+  outline: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  width: 100%;
+  height: calc(100% - 67px - 70px);
+  padding: 10px;
+  box-sizing: border-box;;
+}
+
+.todo-body {
+  padding: 0 10px;
+}
+
+.todo-header {
+  margin: 10px 10px 0 10px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.todo-item {
+  padding: 15px 20px;
+  background-color: white;
+  color: #666;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-align: left;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+.todo-item.is-complete {
+  text-decoration: line-through;
+  color: rgb(243, 243, 243);
+  background-color: #64b8c2;
+}
+
+.no-item {
+  width: 80%;
+  height: 80%;
+  background-image: url(./img/no-item.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+}
+
+.modal {
+  z-index: 1001;
+  background-color: white;
+  width: 300px;
+  color: #64b8c2;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.modal-header h3 {
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.modal-body {
+  flex-grow: 1;
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.btn-add {
+  border: none;
+  background-color: #64b8c2;
+  color: white;
+  padding: 5px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.fade-background {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
