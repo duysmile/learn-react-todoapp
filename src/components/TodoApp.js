@@ -8,14 +8,7 @@ export default class TodoApp extends Component {
     super();
     this.state = {
       todoItems: [
-        {
-          title: 'Go sleep',
-          isComplete: false,
-        },
-        {
-          title: 'Do homework',
-          isComplete: true,
-        },
+        
       ],
       isOpenModal: false,
     };
